@@ -1,4 +1,3 @@
 # chef-centos7-common
 
-TODO: Enter the cookbook description here.
-
+Common recipes used for all jasondebolt/chef-centos7-* cookbooks.
