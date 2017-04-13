@@ -6,10 +6,10 @@ description 'Installs/Configures chef-centos7-common'
 long_description 'Installs/Configures chef-centos7-common'
 version '0.1.0'
 
-# If you upload to Supermarket you should set this so your cookbook
-# gets a `View Issues` link
-# issues_url 'https://github.com/<insert_org_here>/chef-centos7-common/issues' if respond_to?(:issues_url)
+issues_url 'https://github.com/jasondebolt/chef-centos7-common/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/jasondebolt/chef-centos7-common' if respond_to?(:source_url)
 
-# If you upload to Supermarket you should set this so your cookbook
-# gets a `View Source` link
-# source_url 'https://github.com/<insert_org_here>/chef-centos7-common' if respond_to?(:source_url)
+depends 'git'
+depends 'users'
+depends 'screen'
+#depends 'sudo', '~> 3.3.1' # DOES NOT WORK ON CENTOS 7!
