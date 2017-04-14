@@ -1,7 +1,9 @@
 #
 # Cookbook Name:: chef-centos7-common
-# Spec:: default
+# Recipe:: packages
 #
 # Copyright (c) 2017 The Authors, All Rights Reserved.
 
-require 'spec_helper'
+package 'git'
+package 'wget'
+package 'vim-enhanced'

@@ -36,6 +36,7 @@ suites:
   - name: default
     run_list:
       - recipe[chef-centos7-common::default]
+      - recipe[chef-centos7-common::export-node]
     verifier:
       inspec_tests:
         - test/recipes
