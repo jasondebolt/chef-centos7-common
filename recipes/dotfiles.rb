@@ -16,8 +16,12 @@ if vagrant
     user 'vagrant'
     group 'vagrant'
   end
-  execute 'cp -R /home/vagrant/dotfiles/.[^.]* /home/vagrant'
-  execute 'rm -Rf /home/vagrant/.git'
+  execute 'cp -R /home/vagrant/dotfiles/.[^.]* /home/vagrant' do
+    user 'vagrant'
+  end
+  execute 'rm -Rf /home/vagrant/.git' do
+    user 'vagrant'
+  end
 else
   git '/home/centos/dotfiles' do
     repository 'https://github.com/jasondebolt/dotfiles.git'
@@ -26,6 +30,10 @@ else
     user 'centos'
     group 'centos'
   end
-  execute 'cp -R /home/centos/dotfiles/.[^.]* /home/centos'
-  execute 'rm -Rf /home/centos/.git'
+  execute 'cp -R /home/centos/dotfiles/.[^.]* /home/centos' do
+    user 'centos'
+  end
+  execute 'rm -Rf /home/centos/.git' do
+    user 'centos'
+  end
 end

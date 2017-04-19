@@ -5,5 +5,7 @@
 # Copyright (c) 2017 The Authors, All Rights Reserved.
 
 package 'git'
-package 'wget'
+package 'screen'
+package 'tree'
 package 'vim-enhanced'
+package 'wget'

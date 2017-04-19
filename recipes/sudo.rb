@@ -7,6 +7,7 @@
 # Enable 'kitchen verify' to run an an Amazon Centos7 EC2 instance...
 execute 'sed the sudoers file' do
   command "sed -i 's/ requiretty/!requiretty/g' /etc/sudoers"
+  user 'root'
 end
 
 # SUDO RECIPE DOES NOT WORK!!
