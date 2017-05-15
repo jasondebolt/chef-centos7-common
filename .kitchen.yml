@@ -31,6 +31,12 @@ platforms:
     transport:
       username: centos
       ssh_key: ~/keys/JasonOregonKeyPair.pem
+  - name: amazon_linux
+    driver:
+      image_id: ami-d2c924b2
+    transport:
+      username: ec2-user
+      ssh_key: ~/keys/JasonOregonKeyPair.pem
 
 suites:
   - name: default
