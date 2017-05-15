@@ -46,10 +46,10 @@ elsif amazon # Amazon
     user 'ec2-user'
     group 'ec2-user'
   end
-  execute 'cp -R /home/ec2-user/dotfiles/.[^.]* /home/ec2-user' do
-    user 'ec2-user'
-  end
-  execute 'rm -Rf /home/ec2-user/.git' do
-    user 'ec2-user'
-  end
+  #execute 'cp -R /home/ec2-user/dotfiles/.[^.]* /home/ec2-user' do
+  #  user 'ec2-user'
+  #end
+  #execute 'rm -Rf /home/ec2-user/.git' do
+  #  user 'ec2-user'
+  #end
 end
